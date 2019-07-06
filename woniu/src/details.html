@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情购物车</title>
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/detail.css">
+</head>
+
+<body>
+    <!-- 头部盒子 -->
+    <div class="header">
+        <div class="topbar">
+            <div class="site-ct clearfix">
+                <div class="topbar-nav">
+                    <a href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">蜗牛移动</a> <a
+                        href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">免商店·免卡掌厅</a>
+                    <a href="" target="_blank" class="topbar-nav-link1 eng">English</a>
+                    <a href="#" target="_blank" class="topbar-nav-link1 topbar-nav-gif"><img
+                            src="../src/img/mianshangdian.gif">
+                    </a>
+                </div>
+                <div class="topvar-cart">
+                    <div id="commMeu" showcart="1">
+
+                        <a href="javascript:;" class="nav_a_c"><i></i>购物车&nbsp;(&nbsp;<span class="nums"
+                                id="allNums">0</span>&nbsp;)</a>
+
+                        <div class="community none" id="community">
+                            <div class="line"></div>
+                            <div id="cartLogin" class="none" style="display: none;">
+                            </div>
+                            <div id="cartUnlogin">请您先 <a href="" class="clr-red">登录</a> 再查看我的购物车！</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-info">
+                    <div class="fl">
+                        <a href="#" class="topbar-info-link topbar-info-link-b">免登录订单查询</a>
+                    </div>
+                    <div class="login notlogin fl">
+                        <a href="#" class="topbar-info-link topbar-info-link-b userlogin">登录</a>
+                        <a href="#" class="topbar-info-link userreg">注册</a>
+                    </div>
+                    <div class="login_ed haslogin fl none" style="display: none;">
+                        <a id="username" href="#" target="_blank"
+                            class="lg_edw username topbar-info-link topbar-info-link-b"></a>
+                        <a href="#" class="topbar-info-link userlogout">注销</a>
+                    </div>
+                    <div class="fl">
+                        <a href="javascript:;" class="topbar-info-link topbar-info-link-b" id="topbarOrder">我的订单</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav boxsd">
+            <div class="site-ct clearfix">
+                <a href="#" class="logo">
+                    <img src="../src/img/free.png" alt="" id="logoIMG">
+                </a>
+                <ul class="top-nav-list">
+                    <li>
+                        <a href="javascript:void(0);" class="top-nav-item J-webhall">手机卡</a>
+                        <div class="none">
+                            <ul class="children-list clearfix">
+                                <li>
+                                    <a href="#" class="J-webhall">
+                                        <img src="../src/img/mian.png" alt="99大靓号">
+                                        <p class="gd-name">99大靓号</p>
+                                        <p class="gd-price">100</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="J-webhall">
+                                        <img src="../src/img/mian.png" alt="80免卡">
+                                        <p class="gd-name">80免卡</p>
+                                        <p class="gd-price">50元</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="J-webhall">
+                                        <img src="../src/img/mian.png" alt="30免卡">
+                                        <p class="gd-name">30免卡</p>
+                                        <p class="gd-price">30免卡</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="J-webhall">
+                                        <img src="../src/img/mian.png" alt="畅玩12卡">
+                                        <p class="gd-name">畅玩12卡</p>
+                                        <p class="gd-price">30元</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="J-webhall">
+                                        <img src="../src/img/mian.png" alt="大/小蜗牛卡">
+                                        <p class="gd-name">大/小蜗牛卡</p>
+                                        <p class="gd-price">100元</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="J-webhall">
+                                        <img src="../src/img/mian.png" alt="60免卡">
+                                        <p class="gd-name">60免卡</p>
+                                        <p class="gd-price">30元</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="J-webhall">
+                                        <img src="../src/img/mian.png" alt="流量王卡">
+                                        <p class="gd-name">流量王卡</p>
+                                        <p class="gd-price">流量王卡</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="top-nav-item J-webhall">三网卡</a>
+                    </li>
+                    <li>
+                        <a href="" class="top-nav-item">道具·周边</a></li>
+                    <li>
+                        <a href="" class="top-nav-item J-webmall" id="webhall">网上营业厅</a>
+                    </li>
+                    <li>
+                        <a href="" class="top-nav-item">服务</a>
+                    </li>
+                    <li>
+                        <a href="" class="top-nav-item" target="_blank">社区</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../src/img/xaizai.jpeg" class="nav-ad"></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="top-nav-con" class="top-nav-con none">
+                <div class="site-ct"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 主体内容 -->
+
+    <div class="section clearfix">
+        <div class="part-l">
+            <img src="http://attachments.snail.com/snail-app/goods/20181113160253693.jpg" class="pic" alt=""
+                id="preview">
+            <div class="list clearfix">
+                <a href="javascript:;" class="nav nav-left" id="navLeft"><em></em></a>
+                <div class="tablist">
+                    <ul style="width: 207px; overflow: hidden;">
+                        <li>
+                            <a href="javascript:;" class="cur">
+                                <img src="http://attachments.snail.com/snail-app/goods/20181113160253693.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="">
+                                <img src="http://attachments.snail.com/snail-app/goods/20181113155341424.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="">
+                                <img src="http://attachments.snail.com/snail-app/goods/20181113155358846.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="nav nav-right" id="navRight"><em></em></a>
+            </div>
+           
+            <div class="bdsharebuttonbox share-area bdshare-button-style0-16" id="shareArea"
+                data-bd-bind="1562335840544">分享到：
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+            </div>
+            
+        </div>
+        <div class="part-r">
+            <div class="titlebar">
+                <h4 class="title">《黑暗与光明》2018纪念款T恤</h4>
+                <p class="subtitle">蜗牛T恤/丝光棉/黑暗与光明</p>
+            </div>
+            <div class="bar clearfix">
+                <label class="label">原&nbsp;&nbsp;&nbsp;&nbsp;价：</label>
+                <div class="info bidprice">¥199</div>
+            </div>
+            <div class="bar clearfix">
+                <label class="label">现&nbsp;&nbsp;&nbsp;&nbsp;价：</label>
+                <div class="info sellprice">¥98</div>
+            </div>
+            
+            <div class="bar clearfix">
+                <label class="label">商品信息：</label>
+                <div class="info">
+
+                </div>
+            </div>
+           
+            <div class="bar clearfix">
+                <label class="label">运&nbsp;&nbsp;&nbsp;&nbsp;费：</label>
+                <div class="info">江苏苏州&nbsp;至 &nbsp; 浙江省&nbsp;&nbsp;杭州&nbsp;&nbsp;顺丰：0.00</div>
+            </div>
+            <div class="bar clearfix warn-tip">
+                <label class="label">温馨提示：</label>
+                <div class="info">因物流问题，收货地址是新疆、西藏的订单一律不发货，敬请谅解！</div>
+            </div>
+            <div class="sel-box">
+                <div class="bar clearfix">
+                    <label class="label">尺寸：</label>
+                    <div class="list">
+                        <a href="" class="sbox">S</a>
+                        <a href="" class="sbox">M</a>
+                        <a href="javascript:;" class="sbox cur">L</a>
+                        <a href="" class="sbox">XL</a>
+                        <a href="" class="sbox">XXL</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sel-box">
+
+                <div class="bar clearfix">
+                    <label class="label">数量：</label>
+                    <div class="numbox">
+                        <span class="btn lessbtn"></span>
+                        <input class="pro_num" type="text" value="1" max="1">
+                        <span class="btn morebtn"></span>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="clearfix btns-area">
+                <a href="javascript:;" id="qiangBtn" class="btns">立即购买</a>
+                <a href="javascript:;" id="addTocart" class="carBtns">加入购物车</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

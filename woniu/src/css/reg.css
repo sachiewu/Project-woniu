@@ -1,0 +1,468 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: ' ';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font: 12px/1.5 Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+input {
+    outline: 0;
+}
+
+.hidden {
+    float: left;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.hiddenText {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sans {
+    font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', STHeiti, \534E\6587\7EC6\9ED1, SimHei, Helvetica, Arial, sans-serif;
+}
+
+.smallSans {
+    font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', STHeiti, \534E\6587\7EC6\9ED1, SimSun, Helvetica, Arial, sans-serif;
+}
+
+.none {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+table {
+    margin-left: 1px;
+}
+
+table td,
+table th {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    font-family: "寰蒋闆呴粦";
+}
+.main{
+    width:1000px;
+    margin:0 auto;
+}
+.logo{
+    margin:24px 0 99px 0;
+}
+.logo a{
+    display: inline-block;
+    float: left;
+}
+.logo img{
+    display: block;
+}
+.logo span{
+    display: inline-block;
+    height:51px;
+    color:#231815;
+    font-size: 20px;
+    line-height: 70px;
+    padding-left: 20px;
+}
+.desc{
+    font-size: 24px;
+    font-weight: bold;
+    color:#222222;
+    text-align:center;
+    line-height: 1;
+    margin-bottom: 68px;
+}
+/****************************娉ㄥ唽*************************/
+.regForm{
+    margin-left: 250px;
+}
+/* 娓呴櫎娴姩 */
+.row:before,
+.row:after,
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+/* 瑙﹀彂 IE 6/7 鐨� hasLayout */
+.row,
+.clearfix {
+    zoom: 1;
+}
+
+.row {
+    padding: 10px 0;
+}
+#selfhoodForm input{
+    vertical-align: middle;
+}
+
+#selfhoodForm {
+    margin: 0 auto;
+}
+.label,
+.collection,
+.icon {
+    float: left;
+}
+.icon{
+    display: none;
+    height:46px;
+    line-height: 46px;
+    color:#ff4161;
+    font-size: 14px;
+    padding-left:26px;
+    margin-left: 16px;
+}
+.iconError{
+    background: url(../images/error.png) 0 center no-repeat;
+}
+.iconCorrect{
+
+}
+.collection {
+    position: relative;
+    width: 300px;
+    height: 46px;
+}
+.label {
+    width: 7em;
+    font-size: 14px;
+    text-align: right;
+    line-height: 46px;
+    color:#333333;
+}
+.disableIme {
+    ime-mode: disabled;
+}
+.inputDefault,
+.inputWrite {
+    border: 1px solid #e5e5e5;
+    color: #000;
+}
+.inputComplete {
+    /*border: 1px solid blue;*/
+}
+.inputDefault,
+.inputWrite,
+.inputComplete,
+.msgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 9px 6px;
+    width: 286px;
+    font-size: 13px;
+    height:26px;
+    line-height: 26px;
+    font-size: 14px;
+}
+.msgContainer,
+.msgDefault {
+    border: 1px solid #e5e5e5;
+    color: #999;
+    cursor: text;
+}
+.msgHover,
+.msgDefault:hover {
+    border: 1px solid #999;
+    color: #333;
+}
+.msgCorrect {
+    color: #000;
+}
+.msgError {
+    border: 1px solid red;
+    color: red;
+}
+.send,
+.agree {
+    padding-left: 99px;
+}
+.agree {
+    font-size: 14px;
+    color: #999999;
+}
+.agree a {
+    text-decoration: none;
+    color:#0061a6;
+}
+.agree input[type="checkbox"]{
+    position:relative;
+    top:-1px;
+}
+
+.send input {
+    width: 300px;
+    height: 50px;
+    border: 0 none;
+    cursor: pointer;
+    _cursor: hand;
+    font-size: 20px;
+    color:#fff;
+    background: url(../img/submit.jpg) 0 0 repeat-x;
+}
+.send input:hover {
+    background: url(../img/submit.jpg) 0 0 repeat-x;
+}
+.send .disabledSubmit:hover,
+.send .disabledSubmit {
+    cursor: default;
+}
+.logindiv{
+    margin-left:348px;
+    position:relative;
+    width:300px;
+}
+.logindiv span{
+    font-size: 17px;
+    color:#666666;
+}
+.logindiv  p{
+    position:absolute;
+    right:0;
+    top:0;
+    font-size: 14px;
+    color:#999999;
+}
+.logindiv  p a{
+    color:#fd8900;
+    text-decoration: none;
+}
+#captchaDiv{
+    width:128px;
+}
+#captchaDiv input{
+    width:114px;
+}
+.captchaimg{
+    width:100px;
+    height:46px;
+    float: left;
+    margin:0 20px 0 10px;
+}
+.captchaimg img{
+    width:100px;
+    height:46px;
+}
+.changeImg{
+    line-height: 46px;
+    font-size: 14px;
+    color:#666666;
+    text-decoration: none;
+    float: left;
+}
+/*******footer********/
+.reg-footer{
+    margin: 140px 0 60px 0;
+    border-top: 1px solid #e9e8e8;
+    padding-top: 40px;
+    text-align:center;
+}
+.reg-about{
+    margin-left:-20px;
+}
+.reg-about span{
+    display: inline-block;
+    padding:0 20px;
+    font-size: 14px;
+    line-height: 1;
+    border-right:1px solid #d3d3d3;
+    color:#666666;
+}
+.reg-about span em{
+    position:relative;
+    top:-2px;
+}
+.reg-about .brnone{
+    border-right: none;
+}
+.serviceOnline{
+    display: inline-block;
+    width:70px;
+    height:24px;
+    line-height: 24px;
+    background-color: #ff860d;
+    border-radius: 2px;
+    margin-left: 5px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    position:relative;
+    top:-3px;
+}
+.copyright{
+    font-size: 14px;
+    color:#999999;
+    margin-top: 18px;
+    line-height: 1;
+}

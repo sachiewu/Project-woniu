@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>蜗牛商城</title>
 	<link rel="stylesheet" href="../src/css/index.css">
 </head>
 
@@ -12,32 +12,14 @@
 
 
 
-
 	<!-- 头部盒子 -->
 	<div class="header">
-		<div class="topbar">
+		<div class="topbar admin">
 			<div class="site-ct clearfix">
 				<div class="topbar-nav">
-					<!--div class="top-nav-phone" id="phoneNav">
-						<a href="http://10040.snail.com/pc/moclientdisplay.html" target="_blank" class="nav">
-							掌上营业厅
-						</a>
-						<div class="nav-block">
-							<div class="clearfix">
-								<div class="nav-block-l">
-									<a href="javascript:;" class="nav-btn android" name="android"></a>
-									<a href="javascript:;" class="nav-btn ios" name="ios"></a>
-								</div>
-								<div class="nav-block-r">
-									<img src="http://mobile.snail.com/static/common/images/qrcode.jpg" alt="">
-								</div>
-							</div>
-							<p class="tip">扫二维码，下载蜗牛移动掌上营业厅</p>
-						</div>
-					</div-->
 					<a href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">蜗牛移动</a> <a
 						href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">免商店·免卡掌厅</a>
-					<a href="http://mobile.snail.com/en/" target="_blank" class="topbar-nav-link1 eng">English</a>
+					<a href="" target="_blank" class="topbar-nav-link1 eng">English</a>
 					<a href="#" target="_blank" class="topbar-nav-link1 topbar-nav-gif"><img
 							src="../src/img/mianshangdian.gif">
 					</a>
@@ -52,7 +34,7 @@
 							<div class="line"></div>
 							<div id="cartLogin" class="none" style="display: none;">
 							</div>
-							<div id="cartUnlogin">请您先 <a href="" class="clr-red">登录</a> 再查看我的购物车！</div>
+							<div id="cartUnlogin">请您先 <a href="login.html" class="clr-red">登录</a> 再查看我的购物车！</div>
 						</div>
 					</div>
 				</div>
@@ -61,8 +43,51 @@
 						<a href="#" class="topbar-info-link topbar-info-link-b">免登录订单查询</a>
 					</div>
 					<div class="login notlogin fl">
-						<a href="#" class="topbar-info-link topbar-info-link-b userlogin">登录</a>
-						<a href="#" class="topbar-info-link userreg">注册</a>
+						<a href="login.html" class="topbar-info-link topbar-info-link-b userlogin">登录</a>
+						<a href="registor.html" class="topbar-info-link userreg">注册</a>
+					</div>
+					<div class="login_ed haslogin fl none" style="display: none;">
+						<a id="username" href="#" target="_blank"
+							class="lg_edw username topbar-info-link topbar-info-link-b"></a>
+						<a href="#" class="topbar-info-link userlogout">注销</a>
+					</div>
+					<div class="fl">
+						<a href="javascript:;" class="topbar-info-link topbar-info-link-b" id="topbarOrder">我的订单</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topbar loginlater" style="display: none">
+			<div class="site-ct clearfix">
+				<div class="topbar-nav">
+					<a href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">蜗牛移动</a> <a
+						href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">免商店·免卡掌厅</a>
+					<a href="" target="_blank" class="topbar-nav-link1 eng">English</a>
+					<a href="#" target="_blank" class="topbar-nav-link1 topbar-nav-gif"><img
+							src="../src/img/mianshangdian.gif">
+					</a>
+				</div>
+				<div class="topvar-cart">
+					<div id="commMeu" showcart="1">
+
+						<a href="javascript:;" class="nav_a_c"><i></i>购物车&nbsp;(&nbsp;<span class="nums"
+								id="allNums">0</span>&nbsp;)</a>
+
+						<div class="community none" id="community">
+							<div class="line"></div>
+							<div id="cartLogin" class="none" style="display: none;">
+							</div>
+							<div id="cartUnlogin">请您先 <a href="login.html" class="clr-red">登录</a> 再查看我的购物车！</div>
+						</div>
+					</div>
+				</div>
+				<div class="topbar-info">
+					<div class="fl">
+						<a href="#" class="topbar-info-link topbar-info-link-b">你好，欢迎用户,<span class="showname"></span>	</a>
+					</div>
+					<div class="login notlogin fl">
+						<a href="" class="topbar-info-link topbar-info-link-b userlogin close">退出</a>
+						<!-- <a href="registor.html" class="topbar-info-link userreg">注册</a> -->
 					</div>
 					<div class="login_ed haslogin fl none" style="display: none;">
 						<a id="username" href="#" target="_blank"
@@ -140,80 +165,11 @@
 				
 					<li>
 						<a href="javascript:void(0);" class="top-nav-item J-webhall">三网卡</a>
-						<!-- <div class="none">
-							<ul class="children-list clearfix">
-								<li>
-									<a href="#" class="J-webhall">
-										<img src="../src/img/mian.png" alt="上海联通72GB年卡">
-										<p class="gd-name">上海联通72GB年卡</p>
-										<p class="gd-price">469元</p>
-									</a>
-								</li>
-								<li>
-									<a href="" class="J-webhall">
-										<img src="../src/img/liantong.jpeg"
-											alt="上海联通24GB年卡">
-										<p class="gd-name">上海联通24GB年卡</p>
-										<p class="gd-price">239元</p>
-									</a>
-								</li>
-								<li>
-									<a href="" class="J-webhall">
-										<img src="../src/img/liantong.jpeg"
-											alt="广东电信2GB季卡">
-										<p class="gd-name">广东电信2GB季卡</p>
-										<p class="gd-price">49元</p>
-									</a>
-								</li>
-								<li>
-									<a href="" class="J-webhall">
-										<img src="../src/img/liantong.jpeg"
-											alt="北京本地无限流量卡">
-										<p class="gd-name">北京本地无限流量卡</p>
-										<p class="gd-price">100元</p>
-									</a>
-								</li>
-							</ul>
-						</div> -->
+					
 					</li>
 					<li>
 						<a href="" class="top-nav-item">道具·周边</a>
-						<!-- <div class="none">
-							<ul class="children-list clearfix">
-								<li>
-									<a href="" class="J-webhall">
-										<img src="../src/img/xiongmao.jpeg"
-											alt="九阴道具商城">
-										<p class="gd-name">九阴道具商城</p>
-										<p class="gd-price"></p>
-									</a>
-								</li>
-								<li>
-									<a href="" class="J-webhall">
-										<img src="../src/img/xiongmao.jpeg"
-											alt="太极熊猫商城">
-										<p class="gd-name">太极熊猫商城</p>
-										<p class="gd-price"></p>
-									</a>
-								</li>
-								<li>
-									<a href="" class="J-webhall">
-										<img src="../src/img/xiongmao.jpeg"
-											alt="舞街区商城">
-										<p class="gd-name">舞街区商城</p>
-										<p class="gd-price"></p>
-									</a>
-								</li>
-								<li>
-									<a href="" class="J-webhall">
-										<img src="../src/img/xiongmao.jpeg"
-											alt="艺术生活馆">
-										<p class="gd-name">艺术生活馆</p>
-										<p class="gd-price"></p>
-									</a>
-								</li>
-							</ul>
-						</div> -->
+					
 					</li>
 					<li>
 						<a href="" class="top-nav-item J-webmall" id="webhall">网上营业厅</a>
@@ -312,20 +268,7 @@
 						<i class="nav-line"></i>
 						免卡靓号
 					</a>
-					<!-- <div id="index-nav-gnlk" class="popover children-col-1">
-						<div>
-							<ul>
-								<li>
-									<a href="http://mall.snail.com/item/2357-0-250.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/includes/2017/0512/d64d8bdd1d40ac8a1f9e506b496a0fef4961e6b2.png"
-											alt="AAA靓号">
-										<span>AAA靓号</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> -->
+				
 				</li>
 				<li class="nav-item nav-item-k1" data-submenu-id="index-nav-gjmk">
 					<a href="javascript:void(0);">
@@ -333,101 +276,7 @@
 						<i class="nav-line"></i>
 						国际手机卡
 					</a>
-					<!-- <div id="index-nav-gjmk" class="popover children-col-2">
-						<div>
-							<ul>
-								<li class="">
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="泰国免卡【八日流量卡】">
-										<span>泰国免卡【八日流量卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="日本免卡【七日流量卡】">
-										<span>日本免卡【七日流量卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="港澳免卡【二日流量卡】">
-										<span>港澳免卡【二日流量卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="港澳免卡【七日流量卡】">
-										<span>港澳免卡【七日流量卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="美国免卡【三十日套餐卡】">
-										<span>美国免卡【三十日套餐卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="欧洲免卡【二十八日流量卡】">
-										<span>欧洲免卡【二十八日流量卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="新加坡免卡【五日流量卡】">
-										<span>新加坡免卡【五日流量卡】</span>
-									</a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="马来西亚免卡【七日流量卡】">
-										<span>马来西亚免卡【七日流量卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="越南免卡【七日套餐卡】">
-										<span>越南免卡【七日套餐卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link"
-										target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="澳大利亚免卡【七日流量卡】">
-										<span>澳大利亚免卡【七日流量卡】</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link" target="_blank">
-										<img src="../src/img/taiguo.png"
-											alt="查看全部国际免卡">
-										<span>查看全部国际免卡</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> -->
+					
 				</li>
 				<li class="nav-item nav-item-k1" data-submenu-id="index-nav-sj">
 					<a href="javascript:void(0);">
@@ -435,36 +284,7 @@
 						<i class="nav-line"></i>
 						智能硬件
 					</a>
-					<!-- <div id="index-nav-sj" class="popover children-col-1">
-						<div>
-							<ul>
-								<li>
-									<a href="http://mall.snail.com/item/2126-0-0.html" class="popover-link"
-										target="_blank">
-										<img src="//att1.woniu.com/includes/2017/0803/220f47848125b89c5ed50c87429bcc5afa8e6384.png"
-											alt="游戏手机摩奇i7">
-										<span>游戏手机摩奇i7</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://mall.snail.com/item/1727-0-0.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/7d6ad3c5ab542ac9665f473863476ab41df0a902.png"
-											alt="游戏手机78点P01">
-										<span>游戏手机78点P01</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://mall.snail.com/item/1969-0-0.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/includes/2017/0523/470b7623dc2a40081679bba370af6eb0d3a4f9ef.png"
-											alt="蜗牛免机全球通话流量尽畅享">
-										<span>蜗牛免机全球通话流量尽畅享</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> -->
+					
 				</li>
 				<li class="nav-item nav-item-k1 none" data-submenu-id="index-nav-yxzj">
 					<a href="javascript:void(0);">
@@ -479,33 +299,7 @@
 						<i class="nav-line"></i>
 						游戏道具
 					</a>
-					<!-- <div id="index-nav-yxdj" class="popover children-col-1">
-						<div>
-							<ul>
-								<li>
-									<a href="" class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/193d4909786831a27a0856fc4bcf7bd5fbf3de28.png"
-											alt="九阴真经">
-										<span>九阴真经</span>
-									</a>
-								</li>
-								<li class="">
-									<a href="" class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/679cf65223e101ced99907c73c545d269513ad24.png"
-											alt="太极熊猫">
-										<span>太极熊猫</span>
-									</a>
-								</li>
-								<li>
-									<a href="" class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/69ee90fc314c9b2b834486d12dcc123d08511eb7.png"
-											alt="舞街区">
-										<span>舞街区</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> -->
+					
 				</li>
 				<li class="nav-item nav-item-k1" data-submenu-id="index-nav-zb">
 					<a href="//mall.snail.com/shop/hobby" target="_blank">
@@ -520,44 +314,7 @@
 						<i class="nav-line"></i>
 						话费充值
 					</a>
-					<!-- <div id="index-nav-hfcz" class="popover children-col-1">
-						<div>
-							<ul>
-								<li>
-									<a href="http://10040.snail.com/pc/payMoney.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/5dc143f8c09ddc5fbfd7aa32af8ad2ce8bab7b7e.png"
-											alt="立即充值">
-										<span>立即充值</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://bbs.snail.com/thread-30764-1-1.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/ad60ca03f8ed6a1c9c9cfdc734ce4793f669de78.png"
-											alt="周三特惠充值">
-										<span>周三特惠充值</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://service.snail.com/cardinfo/2015/0827/10217.html"
-										class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/includes/2016/1220/e245b00edc61414778bc7856eefc05948358ed7d.png"
-											alt="免商店·免卡掌厅充值">
-										<span>免商店·免卡掌厅充值</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://bbs.snail.com/thread-28081-1-1.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/063b02428713b666312716ed7b730b567dff3dc5.png"
-											alt="微信充值">
-										<span>微信充值</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> -->
+					
 				</li>
 				<li class="nav-item nav-item-k2" data-submenu-id="index-nav-ywcx">
 					<a href="javascript:void(0);">
@@ -575,67 +332,7 @@
 						<i class="nav-line"></i>
 						业务办理
 					</a>
-					<!-- <div id="index-nav-ywbl" class="popover children-col-1">
-						<div>
-							<ul>
-								<li>
-									<a href="http://10040.snail.com/pc/tariff.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/a58795478a0479c9e136f28bba999bcb6a9bf13d.png"
-											alt="购买资费包">
-										<span>购买资费包</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://bbs.snail.com/thread-48453-1-1.html" class="popover-link"
-										target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/98c9bdf05e83cd4a0b9ca94eded71669fe8f3b61.png"
-											alt="免费升级4G">
-										<span>免费升级4G</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://mobile.snail.com/act/0828/gzdt/2015/1016/10589.html"
-										class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/5ca18dc7536e9f45d891dc9d1d137d6f3806789e.png"
-											alt="补办实名制">
-										<span>补办实名制</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://service.snail.com/cardinfo/2015/0827/10216.html"
-										class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/8aaf910c241578fb1941b2daceca2f4ac64bac70.png"
-											alt="补换卡">
-										<span>补换卡</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://security.woniu.com/retrieve" class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/39264c54eddd340b3789009bf671f98a5f545027.png"
-											alt="修改/找回网厅密码">
-										<span>修改/找回网厅密码</span>
-									</a>
-								</li>
-								<li>
-									<a href="http://service.snail.com/cardinfo/2016/0328/11174.html"
-										class="popover-link" target="_blank">
-										<img src="http://att1.niucdn.com/includes/2016/0330/a290dbac44ff44d4c1e67dcc5360ff8d1c1ee46a.jpeg"
-											alt="资费专区">
-										<span>资费专区</span>
-									</a>
-					/			</li>
-								<li>
-									<a href="http://m.mobile.snail.com/act/201708/pack/index.html" class="popover-link"
-										target="_blank">
-										<img src="//att1.woniu.com/includes/2017/0907/6ebc550b38e9266a6a054f4f7abc5653a3ef2b0d.png"
-											alt="蜗牛卡游戏特权领取">
-										<span>蜗牛卡游戏特权领取</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> -->
+					
 				</li>
 			</ul>
 			<div class="prop-banner-container">
@@ -816,17 +513,7 @@
 		
 		</div>
 		
-		<div class="prop-zb prop-mk">
-
-			<div class="prop-zb-title">
-				<h1>蜗牛手机卡</h1><a target="_blank" href="" class="more">更多<span></span></a>
-			</div>
-		<!-- 新增国际免卡广告位 -->
-		<div class="prop-INTCard">
-
-
-
-
+		<div class="prop-INTCard"> 
 
 
 
@@ -868,7 +555,6 @@
 		<div class="prop-zh">
 			<div class="prop-zh-title">
 				<h1>应用</h1>
-				<!--<a target="_blank" href="/shop/hobby" class="more"><span></span></a>-->
 			</div>
 			<div class="prop-zh-detail">
 				<!--300*420 -->
@@ -1209,6 +895,23 @@
         </div>
     </div>
 </div>
+<script>
+	const admin = document.querySelector('.admin');
+	const login = document.querySelector('.loginlater');
+	const span = document.querySelector('.showname');
+	const close = document.querySelector('.close');
+	if (localStorage.getItem('successname')) {
+		admin.style.display = 'none';
+		login.style.display = 'block';
+		span.innerHTML = localStorage.getItem('successname');
+
+	}
+	close.onclick = function () {
+		localStorage.removeItem('successname');
+		admin.style.display = 'block';
+		login.style.display = 'none';
+	}
+</script>
 </body>
 
 </html>
