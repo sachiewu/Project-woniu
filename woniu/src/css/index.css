@@ -1179,9 +1179,49 @@ a {
     line-height: 98px;
     padding-left: 44px;
     font-size: 14px;
-    color: #333
+    color: #333;
+    /* display: block; */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topvar-cart:hover .community{
+    display: block;
+}
+.nav_a_c:hover{
+    background: #fff;
+}
+.nav-item:hover .popover{
+    display: block;
+    border-left:none
+}
+.nav-item:hover{
+    background: #fff;
+    border:1px solid #ff7f00;
+    border-right: none;
+    
+}
+.prop-wrap .prop-banner .dropdown-menu-index .nav-item a:hover{
+    color: black;
+}
 .login,
 .login_ed {
     display: inline-block
@@ -1694,7 +1734,7 @@ body {
     -o-transition: opacity 0.5s
 }
 
-.prop-yxdj-selectBar li.active .line,
+.prop-yxdj-selectBar li .line,
 .prop-yxdj-selectBar li:hover .line {
     opacity: 1;
     filter: alpha(opacity=100)
@@ -2168,3 +2208,4 @@ body {
 .prop-INTCard .prop-zb-img {
     margin-top: -17px;
 }
+

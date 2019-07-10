@@ -8,9 +8,49 @@
     <title>详情购物车</title>
     <link rel="stylesheet" href="../src/css/index.css">
     <link rel="stylesheet" href="../src/css/detail.css">
+   <style>
+     
+   .pic{
+       position: relative;
+       display: block;
+   }
+   .xf{
+       width: 160px;
+       height: 160px;
+       background: grey;
+       opacity: 0.8;
+       position: absolute;
+       top:0;
+       left:0;
+       visibility: hidden;
+       cursor: move;
+   }
+  
+   .dt{
+       width: 900px;
+       height: 900px;
+       position: absolute;
+       top:0;
+       left:0 ;
+       display: block;
+
+   }
+   .df{
+       width: 400px;
+       height: 400px;
+       position: absolute;
+       border:1px solid grey;
+       top:83px;
+       left:726px;
+       visibility: hidden;
+       overflow: hidden;
+   }
+   </style>
 </head>
 
 <body>
+
+        
     <!-- 头部盒子 -->
     <div class="header">
         <div class="topbar">
@@ -26,8 +66,7 @@
                 <div class="topvar-cart">
                     <div id="commMeu" showcart="1">
 
-                        <a href="javascript:;" class="nav_a_c"><i></i>购物车&nbsp;(&nbsp;<span class="nums"
-                                id="allNums">0</span>&nbsp;)</a>
+                        <div href="javascript:;" class="nav_a_c"><i></i><a href="cart.html">购物车</a>&nbsp;</div>
 
                         <div class="community none" id="community">
                             <div class="line"></div>
@@ -42,7 +81,7 @@
                         <a href="#" class="topbar-info-link topbar-info-link-b">免登录订单查询</a>
                     </div>
                     <div class="login notlogin fl">
-                        <a href="#" class="topbar-info-link topbar-info-link-b userlogin">登录</a>
+                        <a href="woniu.html" class="topbar-info-link topbar-info-link-b userlogin">退出</a>
                         <a href="#" class="topbar-info-link userreg">注册</a>
                     </div>
                     <div class="login_ed haslogin fl none" style="display: none;">
@@ -56,92 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="top-nav boxsd">
-            <div class="site-ct clearfix">
-                <a href="#" class="logo">
-                    <img src="../src/img/free.png" alt="" id="logoIMG">
-                </a>
-                <ul class="top-nav-list">
-                    <li>
-                        <a href="javascript:void(0);" class="top-nav-item J-webhall">手机卡</a>
-                        <div class="none">
-                            <ul class="children-list clearfix">
-                                <li>
-                                    <a href="#" class="J-webhall">
-                                        <img src="../src/img/mian.png" alt="99大靓号">
-                                        <p class="gd-name">99大靓号</p>
-                                        <p class="gd-price">100</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="J-webhall">
-                                        <img src="../src/img/mian.png" alt="80免卡">
-                                        <p class="gd-name">80免卡</p>
-                                        <p class="gd-price">50元</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="J-webhall">
-                                        <img src="../src/img/mian.png" alt="30免卡">
-                                        <p class="gd-name">30免卡</p>
-                                        <p class="gd-price">30免卡</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="J-webhall">
-                                        <img src="../src/img/mian.png" alt="畅玩12卡">
-                                        <p class="gd-name">畅玩12卡</p>
-                                        <p class="gd-price">30元</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="J-webhall">
-                                        <img src="../src/img/mian.png" alt="大/小蜗牛卡">
-                                        <p class="gd-name">大/小蜗牛卡</p>
-                                        <p class="gd-price">100元</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="J-webhall">
-                                        <img src="../src/img/mian.png" alt="60免卡">
-                                        <p class="gd-name">60免卡</p>
-                                        <p class="gd-price">30元</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="J-webhall">
-                                        <img src="../src/img/mian.png" alt="流量王卡">
-                                        <p class="gd-name">流量王卡</p>
-                                        <p class="gd-price">流量王卡</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="javascript:void(0);" class="top-nav-item J-webhall">三网卡</a>
-                    </li>
-                    <li>
-                        <a href="" class="top-nav-item">道具·周边</a></li>
-                    <li>
-                        <a href="" class="top-nav-item J-webmall" id="webhall">网上营业厅</a>
-                    </li>
-                    <li>
-                        <a href="" class="top-nav-item">服务</a>
-                    </li>
-                    <li>
-                        <a href="" class="top-nav-item" target="_blank">社区</a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank"><img src="../src/img/xaizai.jpeg" class="nav-ad"></a>
-                    </li>
-                </ul>
-            </div>
-            <div id="top-nav-con" class="top-nav-con none">
-                <div class="site-ct"></div>
-            </div>
-        </div>
+       
     </div>
 
 
@@ -149,8 +103,11 @@
 
     <div class="section clearfix">
         <div class="part-l">
-            <img src="../src/img/goods.jpg" class="pic" alt=""
-                id="preview">
+                    <img src="../src/img/goods.jpg" class="pic" alt=""
+                    id="preview">
+       
+           
+                <div class="xf"></div>
             <div class="list clearfix">
                 <a href="javascript:;" class="nav nav-left" id="navLeft"><em></em></a>
                 <div class="tablist">
@@ -178,6 +135,11 @@
         </div>
 
         <div class="part-r">
+            <div class="df">
+                
+                    <img src="../src/img/goods.jpg" alt="" class="dt">
+                
+            </div>
             <div class="titlebar">
                 <h4 class="title">《黑暗与光明》2018纪念款T恤蜗牛T恤/丝光棉/黑暗与光明</h4>
             </div>
@@ -216,10 +178,17 @@
            
             <div class="clearfix btns-area">
                 <a href="" id="qiangBtn" class="btns">立即购买</a>
-                <a href="" id="addTocart" class="carBtns">加入购物车</a>
+                <a id="addTocart" class="carBtns">加入购物车</a>
             </div>
         </div>
     </div>
+    <div class="alertbox">
+            <h3>商品添加成功!</h3>
+                <span>X</span>
+                <div class="btn1"><a href="cart.html">前往购物车</a></div>
+                <div class="btn2"><a>继续购物</a></div>
+        </div>
+        <!-- <script src="../src/script/thirdplugins/jquery-1.8.3.js"></script> -->
     <script src="../src/script/ajax1.js"></script>
     <script src="../src/script/cookie.js"></script>
 <script src="../src/script/details.js"></script>

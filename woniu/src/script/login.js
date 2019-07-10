@@ -33,6 +33,10 @@ btn.on('click',function(){
             pass: password.val()
         },
         success:function(d){
+            if(username.val()=='' && password.val()==''){
+                alert('账号密码不能为空')
+                return false;
+            }
             if(!d){
                 alert('输入有误');
                 // password.val()='';

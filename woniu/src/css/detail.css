@@ -1,5 +1,56 @@
 /*************combo**************/
 
+/* 购物车弹框样式 */
+.alertbox{
+    width: 300px;
+    height: 180px;
+    border: 1px solid orange;
+    position: absolute;
+    left: 40%;
+    top:40%;
+    background: gray;
+    opacity: 0.8;
+    display: none;
+}
+.alertbox h3{
+    font-size: 22px;
+    margin-top:10px;
+    margin-left: 70px
+}
+.alertbox span{
+    position: absolute;
+    top:5px;
+    right: 8px;
+    cursor: pointer;
+    color: red;
+}
+.alertbox .btn1{
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    position: absolute;
+    color: #fff;
+    top:130px;
+    left: 50px;
+    background:  #ff4400;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+.alertbox .btn1 a{
+    color: #fff;    
+}
+.alertbox .btn2{
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    top:130px;
+    right: 50px;
+    background:  #ff4400;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
 .j-combo {
     width: 998px;
     height: 305px;
@@ -16,7 +67,7 @@
 }
 
 .j-combo-nav li {
-    float: left;
+    /* float: left; */
     padding: 0 30px;
     cursor: pointer;
     display: inline;
@@ -537,12 +588,12 @@ em {
 }
 
 .fl {
-    float: left;
+    /* float: left; */
     display: inline-block
 }
 
 .fr {
-    float: right;
+    /* float: right; */
     display: inline-block
 }
 
@@ -595,7 +646,7 @@ em {
     height: 540px;
     border: 1px solid #e6e6e6;
     float: left;
-    padding: 10px 45px 0;
+    margin: 10px 45px 0;
     position: relative;
 }
 
@@ -1083,7 +1134,7 @@ em {
     margin-bottom: 10px;
 }
 
-.bizDialog .bd {}
+
 
 .bizDialog .bd p {
     text-align: left;
@@ -1181,10 +1232,10 @@ em {
 }
 
 .tequan dl {
-    float: left;
-    width: 445px;
+    /* float: left; */
+    /* width: 445px; */
     overflow: hidden;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-right: 30px;
     display: inline;
 }
@@ -1386,8 +1437,8 @@ em {
 }
 
 .ex-right .android-box {
-    width: 140px;
-    float: left;
+    /* width: 140px; */
+    /* float: left; */
     margin-right: 60px;
     display: inline
 }
@@ -1813,8 +1864,17 @@ a {
 	color: #989898;
 	font-size: 14px;
 	text-decoration: none;
-	position: relative;
-	background-color: #232426
+	cursor: pointer;
+    background-color: #232426;
+    position: fixed;
+    top:0;
+    left:1180px;
+}
+.nav_a_c a{
+    color: grey;
+}
+body{
+    position: relative;
 }
 .nav_a_c i, .nav_a_hover i {
 	width: 21px;
@@ -2329,7 +2389,8 @@ a {
 .patch-bottom {
 	height: 3px;
 	border: 1px solid #dedede;
-	border-top: 0
+    border-top: 0
+    
 }
 #cartUnlogin {
 	height: 98px;

@@ -29,6 +29,8 @@
 //         }
 //     }
 // };
+
+//商品数据渲染
 !(function ($) {
     const container = $('.prop-rqdp-container');
     $.ajax({
@@ -59,46 +61,42 @@
     const picli = $('.prop-slide li');
     const left = $('.prop-slide-btn-left');
     const right = $('.prop-slide-btn-right');
-    let num=null;
-    let timer=null;
-        circle.on('click', function () {
-            $(this).addClass('active').siblings().removeClass('active');
-            num=$(this).index();
-            picli.eq(num).show().siblings().hide();
-           
+    let num = null;
+    let timer = null;
+    //圈圈加类
+    circle.on('click', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        num = $(this).index();
+        picli.eq(num).show().siblings().hide();
+
     })
-    timer=setInterval(function(){
-      
-        rightclick();
-    },2000)
-   
-   !function rightclick(){
-    right.on('click',function(){   
+    //自动轮播
+    timer = setInterval(function () {
+
+        right.click();
+    }, 2000)
+
+    //右键点击
+    right.on('click', function () {
         ++num;
-        if(num==circle.length){
+        if (num == circle.length) {
             // console.log(num)
-            num=0
+            num = 0
         }
         picli.eq(num).show().siblings().hide();
         circle.eq(num).addClass('active').siblings().removeClass('active');
     })
-   }();
-  
-        
-    
-    
-    left.on('click',function(){   
+    //左键点击
+    left.on('click', function () {
         --num;
-        if(num<0){
-            // console.log(num)
-            num=circle.length-1;
-            
+        if (num < 0) {
+            num = circle.length - 1;
+
         }
-        console.log(num);
         picli.eq(num).show().siblings().hide();
         circle.eq(num).addClass('active').siblings().removeClass('active');
     })
-    
+
     // function tabswitch(i) {
     //     $(picli).each(function (j) {
     //     $(this).circle[j].removeClass('active');
@@ -108,6 +106,32 @@
     //     $(this).picli[i].css("display","block");
     // }
 
+    //tab切换
+    //   const ali=document.querySelectorAll('.prop-yxdj-selectBar li');
+    //   const item=document.querySelectorAll('.prop-yxdj-products');
+    //   for(let i=0;i<ali.length;i++){
+    //       ali[i].onclick=function(){
+    //         //   alert(1);
+    //           for(let j=0;j<item.length;j++){
+    //               // ali[j].className='';
+    //               item[j].className='';
+    //           }
+    //           this.item.className='active';
+    //       }
+    //   }
+    //tab切换
+    
+    const ali = $('.prop-selectBar-slide li');
+    const item = $('.prop-yxdj-products');
+    ali.on('click', function () {
+        // console.log($(this).index());
+       
+        $(this).addClass('active').siblings().removeClass('active');
+        
+        // item.eq(num1).show().siblings().hide();
+        item.eq($(this).index()).removeClass('prop-none').siblings('.prop-yxdj-products').addClass('prop-none')
+
+    })
 
 })(jQuery)
 

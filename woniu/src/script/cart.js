@@ -1,5 +1,6 @@
 ;!function () {
     const listitem = document.querySelector('.listitem');//商品列表盒子
+    // console.log(listitem)
     //封装函数实现渲染购物车商品列表
     //通过sid获取对应得接口数据的值。
     function showgoods(sid,num) {
@@ -10,9 +11,10 @@
                
                 let goodshtml='';
                 for (let i = 0; i < piclist.length; i++) {
-                    console.log((piclist[i].price))
+                    // console.log((piclist[i].price))
                     if (piclist[i].picid == sid) {//通过循环判断当前渲染的商品列表的sid和接口数据picid是否相同。
                     goodshtml+=`
+                   
                     <div class="listitem">
                     <table>
                     <tr>
@@ -37,10 +39,12 @@
                     </tr>
                 </table>
                 </div>
+           
                         `;
                     }
                 }
-                listitem.innerHTML+=goodshtml;//追加数据
+                listitem.innerHTML+=goodshtml;
+            
             }
         });
 
