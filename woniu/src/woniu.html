@@ -6,8 +6,68 @@
 	<title>蜗牛商城</title>
 	<link rel="stylesheet" href="../src/css/index.css">
 </head>
+<style>
+	.louti {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 50px;
+		background: grey;
+		height: 100%;
+		z-index: 99999;
+		opacity: 0.6;
+	}
+
+	.rightnav {
+		width: 50px;
+		height: 70px;
+		line-height: 70px;
+		text-align: center;
+		cursor: pointer;
+		color: black;
+		font-size: 18px;
+	}
+
+	.rightnav:hover {
+		background: orange;
+	}
+
+	.pad {
+		margin-top: 365px;
+	}
+
+	.ltbox {
+		width: 300px;
+		height: 100px;
+		position: fixed;
+		top: 335px;
+		right: 50px;
+		border: 1px solid orange;
+		display: none;
+		z-index: 9999;
+	}
+
+	.luntan:hover .ltbox {
+		display: block;
+	}
+</style>
 
 <body>
+
+	<div class="louti">
+		<div class="pad">
+			<div class="luntan rightnav">论坛</div>
+			<div class="kefu rightnav">客服</div>
+			<div class="fenxiang rightnav">分享</div>
+			<div class="yijian rightnav">意见</div>
+			<div class="btn_top rightnav">^顶部</div>
+		</div>
+	</div>
+	<div class="ltbox">
+
+	</div>
+
+
 	<!-- 头部盒子 -->
 	<div class="header">
 		<div class="topbar admin">
@@ -77,7 +137,8 @@
 				</div>
 				<div class="topbar-info">
 					<div class="fl">
-						<a href="#" class="topbar-info-link topbar-info-link-b">你好，欢迎用户,<span class="showname"></span>	</a>
+						<a href="#" class="topbar-info-link topbar-info-link-b">你好，欢迎用户,<span class="showname"></span>
+						</a>
 					</div>
 					<div class="login notlogin fl">
 						<a href="" class="topbar-info-link topbar-info-link-b userlogin close">退出</a>
@@ -156,14 +217,14 @@
 							</ul>
 						</div>
 					</li>
-				
+
 					<li>
 						<a href="javascript:void(0);" class="top-nav-item J-webhall">三网卡</a>
-					
+
 					</li>
 					<li>
 						<a href="" class="top-nav-item">道具·周边</a>
-					
+
 					</li>
 					<li>
 						<a href="" class="top-nav-item J-webmall" id="webhall">网上营业厅</a>
@@ -175,9 +236,7 @@
 						<a href="" class="top-nav-item" target="_blank">社区</a>
 					</li>
 					<li>
-						<a href="" target="_blank"><img
-								src="../src/img/xaizai.jpeg"
-								class="nav-ad"></a>
+						<a href="" target="_blank"><img src="../src/img/xaizai.jpeg" class="nav-ad"></a>
 					</li>
 				</ul>
 			</div>
@@ -204,48 +263,42 @@
 						<div>
 							<ul>
 								<li class="">
-									<a href="" class="popover-link"
-										target="_blank">
+									<a href="" class="popover-link" target="_blank">
 										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/52afdabb920d484c1e12f88d7562aa78932e07e2.png"
 											alt="30免卡">
 										<span>30免卡</span>
 									</a>
 								</li>
 								<li class="">
-									<a href="" class="popover-link"
-										target="_blank">
+									<a href="" class="popover-link" target="_blank">
 										<img src="//att1.woniu.com/includes/2017/1220/b7e7298a5410c2df210d0fa7e7eecee8b2f70230.jpeg"
 											alt="60免卡">
 										<span>60免卡</span>
 									</a>
 								</li>
 								<li>
-									<a href="" class="popover-link"
-										target="_blank">
+									<a href="" class="popover-link" target="_blank">
 										<img src="//att1.woniu.com/includes/2018/0620/4af85ce7212faee7654d2f3c43a755da.png"
 											alt="畅玩12">
 										<span>畅玩12</span>
 									</a>
 								</li>
 								<li>
-									<a href="" class="popover-link"
-										target="_blank">
+									<a href="" class="popover-link" target="_blank">
 										<img src="http://att1.niucdn.com/mobile.snail.com/2015/1029/51d55829859f007c5dc821eeb5ea621465963e3e.png"
 											alt="99大靓号">
 										<span>99大靓号</span>
 									</a>
 								</li>
 								<li>
-									<a href="" class="popover-link"
-										target="_blank">
+									<a href="" class="popover-link" target="_blank">
 										<img src="http://att1.niucdn.com/includes/2015/1124/d2c4e3e531a0b5661528b392936bd01e6d9635c0.png"
 											alt="80免卡">
 										<span>80免卡</span>
 									</a>
 								</li>
 								<li>
-									<a href="" class="popover-link"
-										target="_blank">
+									<a href="" class="popover-link" target="_blank">
 										<img src="//att1.woniu.com/includes/2018/0725/b0690a96dd1ec026ad2e1c894415980a.png"
 											alt="流量王卡">
 										<span>流量王卡</span>
@@ -261,7 +314,7 @@
 						<i class="nav-line"></i>
 						免卡靓号
 					</a>
-				
+
 				</li>
 				<li class="nav-item nav-item-k1" data-submenu-id="index-nav-gjmk">
 					<a href="javascript:void(0);">
@@ -269,7 +322,7 @@
 						<i class="nav-line"></i>
 						国际手机卡
 					</a>
-					
+
 				</li>
 				<li class="nav-item nav-item-k1" data-submenu-id="index-nav-sj">
 					<a href="javascript:void(0);">
@@ -277,7 +330,7 @@
 						<i class="nav-line"></i>
 						智能硬件
 					</a>
-					
+
 				</li>
 				<li class="nav-item nav-item-k1 none" data-submenu-id="index-nav-yxzj">
 					<a href="javascript:void(0);">
@@ -292,7 +345,7 @@
 						<i class="nav-line"></i>
 						游戏道具
 					</a>
-					
+
 				</li>
 				<li class="nav-item nav-item-k1" data-submenu-id="index-nav-zb">
 					<a href="//mall.snail.com/shop/hobby" target="_blank">
@@ -307,7 +360,7 @@
 						<i class="nav-line"></i>
 						话费充值
 					</a>
-					
+
 				</li>
 				<li class="nav-item nav-item-k2" data-submenu-id="index-nav-ywcx">
 					<a href="javascript:void(0);">
@@ -325,20 +378,14 @@
 						<i class="nav-line"></i>
 						业务办理
 					</a>
-					
+
 				</li>
 			</ul>
 			<div class="prop-banner-container">
-				<ul class="prop-slide" id="slideview"
-					style="width: 970px; height: 430px; position: absolute;">
-					<li><a target="_blank"
-							href=""><img
-								src="../src/img/lunbo1.jpg"
-								alt=""></a></li>
-					<li style="display: none"><a target="_blank"
-							href=""><img
-								src="../src/img/lunbo2.jpg"
-								alt=""></a></li>
+				<ul class="prop-slide" id="slideview" style="width: 970px; height: 430px; position: absolute;">
+					<li><a target="_blank" href=""><img src="../src/img/lunbo1.jpg" alt=""></a></li>
+					<li style="display: none"><a target="_blank" href=""><img src="../src/img/lunbo2.jpg" alt=""></a>
+					</li>
 				</ul>
 				<a class="prop-slide-btn prop-slide-btn-left"></a>
 				<a class="prop-slide-btn prop-slide-btn-right"></a>
@@ -367,7 +414,7 @@
 							</a>
 							<div class="line"></div>
 						</li>
-					
+
 						<li style="position: absolute; top: 0px; left: 208px;">
 							<a>
 								<img src="../src/img/jiewu.png">
@@ -375,18 +422,15 @@
 							</a>
 							<div class="line"></div>
 						</li>
-					
+
 					</ul>
 				</div>
-				
+
 			</div>
 			<!-- 九阴真经道具 -->
 			<div class="prop-yxdj-products">
-				<a class="prop-yxdj-product no-hover prop-yxdj-gg" href=""
-					target="_blank">
-					<img
-						width="227" height="360" class="prop-lazy"
-						src="../src/img/luotuo.jpeg"
+				<a class="prop-yxdj-product no-hover prop-yxdj-gg" href="" target="_blank">
+					<img width="227" height="360" class="prop-lazy" src="../src/img/luotuo.jpeg"
 						style="display: inline;">
 				</a>
 				<!-- 游戏道具商品图 197*190 -->
@@ -394,35 +438,28 @@
 					<div class="prop-yxdj-product-title">四象剑鞘</div>
 					<div class="prop-yxdj-product-price">1298.00元</div>
 					<div class="prop-yxdj-product-img">
-						<img
-							class="prop-lazy" src="../src/img/jian.jpg"
-							style="display: inline;">
+						<img class="prop-lazy" src="../src/img/jian.jpg" style="display: inline;">
 					</div>
 				</a>
 				<a class="prop-yxdj-product " href="" target="_blank">
 					<div class="prop-yxdj-product-title">邪龙双月刃</div>
 					<div class="prop-yxdj-product-price">1298.00元</div>
 					<div class="prop-yxdj-product-img">
-						<img 
-							class="prop-lazy" src="../src/img/jian.jpg"
-							style="display: inline;">
+						<img class="prop-lazy" src="../src/img/jian.jpg" style="display: inline;">
 					</div>
 				</a>
 				<a class="prop-yxdj-product " href="" target="_blank">
 					<div class="prop-yxdj-product-title">王命金锏</div>
 					<div class="prop-yxdj-product-price">1298.00元</div>
 					<div class="prop-yxdj-product-img">
-						<img class="prop-lazy" src="../src/img/jian.jpg"
-							style="display: inline;">
+						<img class="prop-lazy" src="../src/img/jian.jpg" style="display: inline;">
 					</div>
 				</a>
-				<a class="prop-yxdj-product prop-yxdj-product-l"
-					href="" target="_blank">
+				<a class="prop-yxdj-product prop-yxdj-product-l" href="" target="_blank">
 					<div class="prop-yxdj-product-title">十方双剑鞘</div>
 					<div class="prop-yxdj-product-price">1298.00元</div>
 					<div class="prop-yxdj-product-img">
-						<img class="prop-lazy" src="../src/img/jian.jpg"
-							style="display: inline;">
+						<img class="prop-lazy" src="../src/img/jian.jpg" style="display: inline;">
 					</div>
 				</a>
 				<a target="_blank" class="more" href="/shop/9yin">
@@ -431,46 +468,39 @@
 					<span class="more-btn"></span>
 				</a>
 			</div>
-			
-		<!-- 切换的盒子 -->
+
+			<!-- 切换的盒子 -->
 			<div class="prop-yxdj-products prop-none">
-				<a class="prop-yxdj-product no-hover prop-yxdj-gg" href=""
-					target="_blank">
-					<img width="227" height="360" class="prop-lazy"
-						src="../src/img/yemingzhu.jpeg">
+				<a class="prop-yxdj-product no-hover prop-yxdj-gg" href="" target="_blank">
+					<img width="227" height="360" class="prop-lazy" src="../src/img/yemingzhu.jpeg">
 				</a>
 				<!-- 游戏道具商品图 197*190 -->
 				<a class="prop-yxdj-product " href="" target="_blank">
 					<div class="prop-yxdj-product-title">百合</div>
 					<div class="prop-yxdj-product-price">1.00元</div>
 					<div class="prop-yxdj-product-img">
-						<img class="prop-lazy"
-							src="../src/img/baihe.png">
+						<img class="prop-lazy" src="../src/img/baihe.png">
 					</div>
 				</a>
 				<a class="prop-yxdj-product " href="" target="_blank">
 					<div class="prop-yxdj-product-title">爱の见证</div>
 					<div class="prop-yxdj-product-price">9.60元</div>
 					<div class="prop-yxdj-product-img">
-						<img class="prop-lazy"
-							src="../src/img/baihe.png">
+						<img class="prop-lazy" src="../src/img/baihe.png">
 					</div>
 				</a>
 				<a class="prop-yxdj-product " href="" target="_blank">
 					<div class="prop-yxdj-product-title">迷人舞娘衣嫩黄</div>
 					<div class="prop-yxdj-product-price">1.68元</div>
 					<div class="prop-yxdj-product-img">
-						<img class="prop-lazy"
-							src="../src/img/baihe.png">
+						<img class="prop-lazy" src="../src/img/baihe.png">
 					</div>
 				</a>
-				<a class="prop-yxdj-product prop-yxdj-product-l" href=""
-					target="_blank">
+				<a class="prop-yxdj-product prop-yxdj-product-l" href="" target="_blank">
 					<div class="prop-yxdj-product-title">许愿卡</div>
 					<div class="prop-yxdj-product-price">0.88元</div>
 					<div class="prop-yxdj-product-img">
-						<img class="prop-lazy"
-							src="../src/img/baihe.png">
+						<img class="prop-lazy" src="../src/img/baihe.png">
 					</div>
 				</a>
 				<a target="_blank" class="more" href="/shop/5jq">
@@ -479,10 +509,10 @@
 					<span class="more-btn"></span>
 				</a>
 			</div>
-		
+
 		</div>
-		
-		<div class="prop-INTCard"> 
+
+		<div class="prop-INTCard">
 
 
 
@@ -490,34 +520,28 @@
 			<div class="prop-zb-title">
 				<h1>蜗牛国际手机卡</h1><a target="_blank" href="//mall.snail.com/shop/gjk/" class="more">更多<span></span></a>
 			</div>
-			<div class="prop-zb-products"><a class="prop-zb-product no-hover"
-					href="" target="_blank"> <img
-						width="227" height="360" class="prop-lazy"
-						src="../src/img/luotuo.jpeg">
+			<div class="prop-zb-products"><a class="prop-zb-product no-hover" href="" target="_blank"> <img width="227"
+						height="360" class="prop-lazy" src="../src/img/luotuo.jpeg">
 				</a><a class="prop-zb-product " href="" target="_blank">
 					<div class="prop-zb-product-title">马来西亚卡</div>
 					<div class="prop-zb-product-des">7日2.2GB高速上网流量</div>
-					<div class="prop-zb-product-price">22.5元</div> <img
-						class="prop-zb-img prop-lazy" style="display: inline;"
-						src="../src/img/jian.jpg">
+					<div class="prop-zb-product-price">22.5元</div> <img class="prop-zb-img prop-lazy"
+						style="display: inline;" src="../src/img/jian.jpg">
 				</a><a class="prop-zb-product " href="" target="_blank">
 					<div class="prop-zb-product-title">日本卡</div>
 					<div class="prop-zb-product-des">7日无限上网流量</div>
-					<div class="prop-zb-product-price">44元</div> <img
-						class="prop-zb-img prop-lazy" style="display: inline;"
-						src="../src/img/taiguo.png">
+					<div class="prop-zb-product-price">44元</div> <img class="prop-zb-img prop-lazy"
+						style="display: inline;" src="../src/img/taiguo.png">
 				</a><a class="prop-zb-product " href="" target="_blank">
 					<div class="prop-zb-product-title">美国卡</div>
 					<div class="prop-zb-product-des">30日无限上网流量，无限通话</div>
-					<div class="prop-zb-product-price">80元</div> <img
-						class="prop-zb-img prop-lazy" style="display: inline;"
-						src="../src/img/taiguo.png">
+					<div class="prop-zb-product-price">80元</div> <img class="prop-zb-img prop-lazy"
+						style="display: inline;" src="../src/img/taiguo.png">
 				</a><a class="prop-zb-product n-m-r" href="" target="_blank">
 					<div class="prop-zb-product-title">欧洲卡</div>
 					<div class="prop-zb-product-des">15日1.5GB4G高速流量</div>
-					<div class="prop-zb-product-price">71元</div> <img
-						class="prop-zb-img prop-lazy" style="display: inline;"
-						src="../src/img/taiguo.png">
+					<div class="prop-zb-product-price">71元</div> <img class="prop-zb-img prop-lazy"
+						style="display: inline;" src="../src/img/taiguo.png">
 				</a></div>
 		</div>
 
@@ -532,8 +556,7 @@
 					<div class="swiper-container" id="zh-goods" style="cursor: -webkit-grab;">
 						<div class="swiper-wrapper"
 							style="width: 1120px; height: 280px; transform: translate3d(-560px, 0px, 0px); transition-duration: 0.3s;">
-							<div class="swiper-slide swiper-slide-duplicate"
-								style="width: 280px; height: 280px;">
+							<div class="swiper-slide swiper-slide-duplicate" style="width: 280px; height: 280px;">
 								<h3>蜗牛盾APP</h3>
 								<h4>蜗牛通行证保护伞</h4>
 								<a href="" target="_blank" class="thumb"><img
@@ -553,7 +576,7 @@
 								<a href="" target="_blank" class="thumb"><img
 										src="http://att1.niucdn.com/includes/2016/1109/20124eaf3261f2ac68b937b53e9333e3c56822d4.jpeg"></a>
 							</div>
-					
+
 						</div>
 					</div>
 					<div class="pagination pagination-goods"><span class="swiper-pagination-switch"></span><span
@@ -564,8 +587,7 @@
 					<div class="swiper-container" id="zh-news" style="cursor: -webkit-grab;">
 						<div class="swiper-wrapper"
 							style="width: 1120px; height: 280px; transform: translate3d(-560px, 0px, 0px); transition-duration: 0.3s;">
-							<div class="swiper-slide swiper-slide-duplicate"
-								style="width: 280px; height: 280px;">
+							<div class="swiper-slide swiper-slide-duplicate" style="width: 280px; height: 280px;">
 								<h3>九阴真经3D</h3>
 								<h4>掌上真武侠，3D醉江湖</h4>
 								<a href="" target="_blank" class="thumb"><img
@@ -577,22 +599,21 @@
 								<a href="" target="_blank" class="thumb"><img
 										src="http://att1.niucdn.com/includes/2016/1028/c8f9ec2a962b8c1c2549ba426ca45932c9de7c08.jpeg"></a>
 							</div>
-							
 
 
 
 
 
 
-							
-								 <!-- 点击跳转的盒子 -->
-								<div class="swiper-slide swiper-slide-duplicate"
-									style="width: 280px; height: 280px;">
-									<h3>蜗牛游戏</h3>
-									<h4>天堂2手游</h4>
-									<a href="http://tt2.woniu.com/" target="_blank" class="thumb"><img
-											src="http://att1.niucdn.com/includes/2016/1028/c8f9ec2a962b8c1c2549ba426ca45932c9de7c08.jpeg"></a>
-								</div> 
+
+
+							<!-- 点击跳转的盒子 -->
+							<div class="swiper-slide swiper-slide-duplicate" style="width: 280px; height: 280px;">
+								<h3>蜗牛游戏</h3>
+								<h4>天堂2手游</h4>
+								<a href="http://tt2.woniu.com/" target="_blank" class="thumb"><img
+										src="http://att1.niucdn.com/includes/2016/1028/c8f9ec2a962b8c1c2549ba426ca45932c9de7c08.jpeg"></a>
+							</div>
 						</div>
 					</div>
 					<div class="pagination pagination-news"><span class="swiper-pagination-switch"></span><span
@@ -603,8 +624,7 @@
 					<div class="swiper-container" id="zh-games" style="cursor: -webkit-grab;">
 						<div class="swiper-wrapper"
 							style="width: 840px; height: 280px; transform: translate3d(-280px, 0px, 0px); transition-duration: 0s;">
-							<div class="swiper-slide"
-								style="width: 280px; height: 280px;">
+							<div class="swiper-slide" style="width: 280px; height: 280px;">
 								<h3>蜗牛VR</h3>
 								<h4>虚拟与现实交互</h4>
 								<a href="" target="_blank" class="thumb"><img
@@ -663,221 +683,248 @@
 			</div>
 		</div>
 	</div>
-<!-- 尾部 -->
+	<!-- 尾部 -->
 
 
 
 
 
-<div class="footer">
-    <div class="footermain">
-        <div class="ft-promise">
-            <p class="ft-p1">
-                <i></i>
-                100%正品保证
-            </p>
-            <p class="ft-p2">
-                <i></i>
-                快递包邮
-            </p>
-            <p class="ft-p3">
-                <i></i>
-                无忧退换货
-            </p>
-            <p class="ft-p4">
-                <i></i>
-                准时送达
-            </p>
-        </div>
-        <ul class="friend-link clearfix">
-            <li class="cc">
-                <h4>
-                    关于我们
-                </h4>
-                <ul>
-                    <li>
-                        <a href="http://about.snail.com/" target="_blank">蜗牛介绍</a>
-                    </li>
-                    <li>
-                        <a href="http://about.snail.com/employee/job/" target="_blank">加入蜗牛</a>
-                    </li>
-                    <li>
-                        <a href="http://about.snail.com/contract/" target="_blank">联系我们</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="cc">
-                <h4>
-                    蜗牛游戏
-                </h4>
-                <ul>
-                    <li>
-                        <a href="http://app.woniu.com/" target="_blank">手机游戏</a>
-                    </li>
-                    <li>
-                        <a href="http://www.woniu.com/" target="_blank">客户端游戏</a>
-                    </li>
-                    <li>
-                        <a href="http://www.woniu.com/" target="_blank">网页游戏</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="cc">
-                <h4>
-                    蜗牛移动
-                </h4>
-                <ul>
-                    <li>
-                        <a href="http://170.snail.com" target="_blank">免卡</a>
-                    </li>
-                    <li>
-                        <a href="http://app.snail.com/" target="_blank">免商店·免卡掌厅</a>
-                    </li>
-                    <li>
-                        <a href="http://phone.snail.com/" target="_blank">游戏手机</a>
-                    </li>
-                    <li>
-                        <a href="http://obox.snail.com/" target="_blank">游戏主机</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="cc">
-                <h4>
-                    客服社区
-                </h4>
-                <ul>
-                    <li>
-                        <a href="http://res.woniu.com/support/support.html" target="_blank">游戏客服</a>
-                    </li>
-                    <li>
-                        <a href="http://club.woniu.com/" target="_blank">游戏社区</a>
-                    </li>
-                    <li>
-                        <a href="http://service.snail.com/" target="_blank">移动客服</a>
-                    </li>
-                    <li>
-                        <a href="http://bbs.snail.com/portal.php" target="_blank">移动社区</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="cc">
-                <h4>
-                    商务合作
-                </h4>
-                <ul>
-                    <li>
-                        <a href="http://about.snail.com/cooperate/#01" target="_blank">合作信息</a>
-                    </li>
-                    <li>
-                        <a href="http://about.snail.com/cooperate/#02" target="_blank">合作伙伴</a>
-                    </li>
-                    <li>
-                        <a href="//about.snail.com/static/cooperate/info/" target="_blank">国际免卡合作</a>
-                    </li>
-                    <li>
-                        <a href="//about.snail.com/static/cooperate/info/" target="_blank">Snail intl SIM Card</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="cc">
-                <h4>
-                    7x24小时客服
-                </h4>
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" target="_blank">蜗牛移动</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" target="_blank">免卡免费服务热线：10040</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" target="_blank">免商店咨询：0512-67621007</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" target="_blank">蜗牛游戏：0512-67631800</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <div class="ft-prize">
-            <a href="javascript:void(0);" class="prize-item prize-item1">
-                <i></i>
-                <p>ChinaV中国</p>
-                <p>产业互联网峰会</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item2">
-                <i></i>
-                <p>2014年度</p>
-                <p>TCT业龙虎榜</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item3">
-                <i></i>
-                <p>C114</p>
-                <p>中国通信网</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item4">
-                <i></i>
-                <p>环球时报2014年度</p>
-                <p>最具渗透力互联网产品</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item5">
-                <i></i>
-                <p>2015中国虚拟</p>
-                <p>运营发展论坛</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item6">
-                <i></i>
-                <p>CES展美国知名媒体</p>
-                <p>Techgage所评</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item7">
-                <i></i>
-                <p>人民邮电报</p>
-                <p>虚商风云榜</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item8">
-                <i></i>
-                <p>2014第八届</p>
-                <p>中国杯帆船赛</p>
-            </a>
-            <a href="javascript:void(0);" class="prize-item prize-item9">
-                <i></i>
-                <p>第三届飞象网中国</p>
-                <p>好手机、好应用</p>
-            </a>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="footermain clearfix">
-            <a href=" http://www.szgswljg.gov.cn/websiteMark?siteid=28974" target="_blank" class="copyright-link1"></a>
-            <!--<a href="javascript:void(0);" class="copyright-link2"></a>
+	<div class="footer">
+		<div class="footermain">
+			<div class="ft-promise">
+				<p class="ft-p1">
+					<i></i>
+					100%正品保证
+				</p>
+				<p class="ft-p2">
+					<i></i>
+					快递包邮
+				</p>
+				<p class="ft-p3">
+					<i></i>
+					无忧退换货
+				</p>
+				<p class="ft-p4">
+					<i></i>
+					准时送达
+				</p>
+			</div>
+			<ul class="friend-link clearfix">
+				<li class="cc">
+					<h4>
+						关于我们
+					</h4>
+					<ul>
+						<li>
+							<a href="http://about.snail.com/" target="_blank">蜗牛介绍</a>
+						</li>
+						<li>
+							<a href="http://about.snail.com/employee/job/" target="_blank">加入蜗牛</a>
+						</li>
+						<li>
+							<a href="http://about.snail.com/contract/" target="_blank">联系我们</a>
+						</li>
+					</ul>
+				</li>
+				<li class="cc">
+					<h4>
+						蜗牛游戏
+					</h4>
+					<ul>
+						<li>
+							<a href="http://app.woniu.com/" target="_blank">手机游戏</a>
+						</li>
+						<li>
+							<a href="http://www.woniu.com/" target="_blank">客户端游戏</a>
+						</li>
+						<li>
+							<a href="http://www.woniu.com/" target="_blank">网页游戏</a>
+						</li>
+					</ul>
+				</li>
+				<li class="cc">
+					<h4>
+						蜗牛移动
+					</h4>
+					<ul>
+						<li>
+							<a href="http://170.snail.com" target="_blank">免卡</a>
+						</li>
+						<li>
+							<a href="http://app.snail.com/" target="_blank">免商店·免卡掌厅</a>
+						</li>
+						<li>
+							<a href="http://phone.snail.com/" target="_blank">游戏手机</a>
+						</li>
+						<li>
+							<a href="http://obox.snail.com/" target="_blank">游戏主机</a>
+						</li>
+					</ul>
+				</li>
+				<li class="cc">
+					<h4>
+						客服社区
+					</h4>
+					<ul>
+						<li>
+							<a href="http://res.woniu.com/support/support.html" target="_blank">游戏客服</a>
+						</li>
+						<li>
+							<a href="http://club.woniu.com/" target="_blank">游戏社区</a>
+						</li>
+						<li>
+							<a href="http://service.snail.com/" target="_blank">移动客服</a>
+						</li>
+						<li>
+							<a href="http://bbs.snail.com/portal.php" target="_blank">移动社区</a>
+						</li>
+					</ul>
+				</li>
+				<li class="cc">
+					<h4>
+						商务合作
+					</h4>
+					<ul>
+						<li>
+							<a href="http://about.snail.com/cooperate/#01" target="_blank">合作信息</a>
+						</li>
+						<li>
+							<a href="http://about.snail.com/cooperate/#02" target="_blank">合作伙伴</a>
+						</li>
+						<li>
+							<a href="//about.snail.com/static/cooperate/info/" target="_blank">国际免卡合作</a>
+						</li>
+						<li>
+							<a href="//about.snail.com/static/cooperate/info/" target="_blank">Snail intl SIM Card</a>
+						</li>
+					</ul>
+				</li>
+				<li class="cc">
+					<h4>
+						7x24小时客服
+					</h4>
+					<ul>
+						<li>
+							<a href="javascript:void(0);" target="_blank">蜗牛移动</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_blank">免卡免费服务热线：10040</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_blank">免商店咨询：0512-67621007</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_blank">蜗牛游戏：0512-67631800</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="ft-prize">
+				<a href="javascript:void(0);" class="prize-item prize-item1">
+					<i></i>
+					<p>ChinaV中国</p>
+					<p>产业互联网峰会</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item2">
+					<i></i>
+					<p>2014年度</p>
+					<p>TCT业龙虎榜</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item3">
+					<i></i>
+					<p>C114</p>
+					<p>中国通信网</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item4">
+					<i></i>
+					<p>环球时报2014年度</p>
+					<p>最具渗透力互联网产品</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item5">
+					<i></i>
+					<p>2015中国虚拟</p>
+					<p>运营发展论坛</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item6">
+					<i></i>
+					<p>CES展美国知名媒体</p>
+					<p>Techgage所评</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item7">
+					<i></i>
+					<p>人民邮电报</p>
+					<p>虚商风云榜</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item8">
+					<i></i>
+					<p>2014第八届</p>
+					<p>中国杯帆船赛</p>
+				</a>
+				<a href="javascript:void(0);" class="prize-item prize-item9">
+					<i></i>
+					<p>第三届飞象网中国</p>
+					<p>好手机、好应用</p>
+				</a>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="footermain clearfix">
+				<a href=" http://www.szgswljg.gov.cn/websiteMark?siteid=28974" target="_blank"
+					class="copyright-link1"></a>
+				<!--<a href="javascript:void(0);" class="copyright-link2"></a>
             <a href="javascript:void(0);" class="copyright-link3"></a>-->
-            <div>
-                <p class="copyright-p1">蜗牛移动，新生代运营商领导者！</p>
-                <p class="copyright-p2">© 2015 蜗牛 苏州蜗牛数字科技股份有限公司 版权所有 苏ICP备08012323号-6 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32059002001018" target="_blank">苏公网安备 32059002001018号</a></p>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="../src/script/thirdplugins/jquery-1.8.3.js"></script>
-<script src="../src/script/woniu.js"></script>
-<script>
-	const admin = document.querySelector('.admin');
-	const login = document.querySelector('.loginlater');
-	const span = document.querySelector('.showname');
-	const close = document.querySelector('.close');
-	if (localStorage.getItem('successname')) {
-		admin.style.display = 'none';
-		login.style.display = 'block';
-		span.innerHTML = localStorage.getItem('successname');
+				<div>
+					<p class="copyright-p1">蜗牛移动，新生代运营商领导者！</p>
+					<p class="copyright-p2">© 2015 蜗牛 苏州蜗牛数字科技股份有限公司 版权所有 苏ICP备08012323号-6 <a
+							href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32059002001018"
+							target="_blank">苏公网安备 32059002001018号</a></p>
+				</div>
+			</div>
+		</div>
 
-	}
-	close.onclick = function () {
-		localStorage.removeItem('successname');
-		admin.style.display = 'block';
-		login.style.display = 'none';
-	}
-</script>
+
+
+	</div>
+
+	<script src="../src/script/thirdplugins/jquery-1.8.3.js"></script>
+	<script src="../src/script/woniu.js"></script>
+	<script>
+		const admin = document.querySelector('.admin');
+		const login = document.querySelector('.loginlater');
+		const span = document.querySelector('.showname');
+		const close = document.querySelector('.close');
+		if (localStorage.getItem('successname')) {
+			admin.style.display = 'none';
+			login.style.display = 'block';
+			span.innerHTML = localStorage.getItem('successname');
+
+		}
+		close.onclick = function () {
+			localStorage.removeItem('successname');
+			admin.style.display = 'block';
+			login.style.display = 'none';
+		}
+		var btn_top = document.querySelector('.btn_top');
+		var v = -30;
+		var t = 0;
+		var tp;
+		btn_top.onclick = function () {
+			scro();
+		}
+		window.onscroll = function () {
+			tp = document.documentElement.scrollTop || document.body.scrollTop;
+			return tp;
+		};
+		function scro() {
+			clearInterval(timer);
+			var timer = setInterval(function () {
+				v = (0 - tp) / 10;
+				if (tp <= 0) { tp = 0; clearInterval(timer) }
+				document.documentElement.scrollTop = tp + v;
+				document.body.scrollTop = tp + v;
+			}, 16)
+		}
+	</script>
 </body>
 
 </html>

@@ -22,7 +22,8 @@
        position: absolute;
        top:0;
        left:0;
-       visibility: hidden;
+       /* visibility: hidden; */
+       display: none;
        cursor: move;
    }
   
@@ -42,7 +43,8 @@
        border:1px solid grey;
        top:83px;
        left:726px;
-       visibility: hidden;
+       /* visibility: hidden; */
+       display: none;
        overflow: hidden;
    }
    </style>
@@ -103,11 +105,12 @@
 
     <div class="section clearfix">
         <div class="part-l">
-                    <img src="../src/img/goods.jpg" class="pic" alt=""
-                    id="preview">
+                <div class="part-l-image">
+                    <img src="../src/img/goods.jpg" class="pic" alt="" id="preview">
+                    <div class="xf"></div>
+                </div>
        
            
-                <div class="xf"></div>
             <div class="list clearfix">
                 <a href="javascript:;" class="nav nav-left" id="navLeft"><em></em></a>
                 <div class="tablist">
@@ -188,7 +191,7 @@
                 <div class="btn1"><a href="cart.html">前往购物车</a></div>
                 <div class="btn2"><a>继续购物</a></div>
         </div>
-        <!-- <script src="../src/script/thirdplugins/jquery-1.8.3.js"></script> -->
+        <script src="../src/script/thirdplugins/jquery-1.8.3.js"></script>
     <script src="../src/script/ajax1.js"></script>
     <script src="../src/script/cookie.js"></script>
 <script src="../src/script/details.js"></script>
