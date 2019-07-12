@@ -90,7 +90,7 @@
 // username.onblur=function(){
 //     ajax({
 //         type:'post',
-//         url:'http://localhost/1905-js/project/woniu/php/reg.php',
+//         url:'http://10.31.158.24/1905-js/project/woniu/php/reg.php',
 //         data:{
 //             name:username.value,
 //             pass:password.value,
@@ -190,7 +190,7 @@ let flag=true;
 username.on('blur',function(){
     $.ajax({
         type:'post',
-        url:'http://localhost/1905-js/project/woniu/php/reg.php',
+        url:'http://10.31.158.24/1905-js/project/woniu/php/reg.php',
         data:{
             name:username.val(),
             pass:password.val(),

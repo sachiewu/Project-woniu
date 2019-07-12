@@ -21,5 +21,5 @@ if(isset($_POST['submit'])){
     $confirmPassword=sha1($_POST['confirmPassword']);
     $conn->query("insert usertable values(null,'$username','$password',NOW(),'$confirmPassword')");
     //设置跳转的地址
-    header('location:http://localhost/1905-js/project/woniu/src/login.html');
+    header('location:http://10.31.158.24/1905-js/project/woniu/src/login.html');
 }

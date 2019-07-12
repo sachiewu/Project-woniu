@@ -5,6 +5,7 @@ const minicss=require('gulp-minify-css');
 const babel=require('gulp-babel');
 const es2015=require('babel-preset-es2015');
 const imagemin=require('gulp-imagemin');
+const uglify=require('gulp-uglify');
 //html
 gulp.task('uglifyhtml',function () { 
     return gulp.src('src/*.html')
@@ -19,11 +20,11 @@ gulp.task('uglifycss', () => {
         .pipe(gulp.dest('dist/css'));//输出
 });
 //压缩js
-gulp.task('uglifyjs', () => {
-    return gulp.src('src/script/*.js')//引入文件
-        .pipe(uglify())//执行压缩插件
-        .pipe(gulp.dest('dist/script'));//输出
-});
+// gulp.task('uglifyjs', () => {
+//     return gulp.src('src/script/*.js')//引入文件
+//         .pipe(uglify())//执行压缩插件
+//         .pipe(gulp.dest('dist/script'));//输出
+// });
 //es6转es5
 //gulp-babel gulp-core  babel-preset-es2015
 gulp.task('babeljs', () => {
@@ -31,6 +32,7 @@ gulp.task('babeljs', () => {
         .pipe(babel({
             presets: ['es2015']
         }))//执行压缩插件
+        .pipe(uglify())//执行压缩插件
         .pipe(gulp.dest('dist/script'));//输出
 });
 
@@ -45,5 +47,5 @@ gulp.task('uglifyimg', () => {
  //监听
 gulp.task('default',function () { 
     watch(['src/*.html','src/css/*.css','src/script/*.js','src/img/*.png'],
-        gulp.parallel('uglifyhtml','uglifycss','uglifyjs','babeljs','uglifyimg'));
+        gulp.parallel('uglifyhtml','uglifycss','babeljs','uglifyimg'));
  })

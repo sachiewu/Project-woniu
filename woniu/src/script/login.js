@@ -4,7 +4,7 @@
 // btn.onclick = function () {
 //     ajax({
 //         type: 'post',
-//         url:'http://localhost/1905-js/project/woniu/php/login.php',
+//         url:'http://10.31.158.24/1905-js/project/woniu/php/login.php',
 //         data: {//数据传给后端   php后端进行匹配
 //             user: username.value,
 //             pass: password.value
@@ -27,7 +27,7 @@ const password=$('.password');
 btn.on('click',function(){
     $.ajax({
         type:'post',
-        url:'http://localhost/1905-js/project/woniu/php/login.php',
+        url:'http://10.31.158.24/1905-js/project/woniu/php/login.php',
         data:{
             user: username.val(),
             pass: password.val()

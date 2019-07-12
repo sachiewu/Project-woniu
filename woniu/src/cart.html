@@ -6,53 +6,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
+    <link rel="stylesheet" href="../src/css/index.css">
     <style>
-        .listitem {
-            width: 1200px;
-            height: 150px;
-            margin:  0  auto;
+        .cart-top {
+            height: 100px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
         }
-       table{
-           border: 1px solid grey;
-       }
-       img{
-           width: 100px;
-           height: 100px;
-       }
-       a{
-           cursor: pointer;
-           color: red
-       }    
+
+        .cart-top .top {
+            width: 1200px;
+            margin: 0 auto;
+            height: 100px;
+            line-height: 100px;
+            font-size: 24px;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        .cart-top .top .logo {
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 30px;
+            margin-top: 25px;
+        }
+        .myclass{
+            font-size: 26px;
+            display: inline-block;
+        }
+        a{
+            color:grey;
+        }
+        .goodslist{
+            width: 1200px;
+            margin: 0 auto;
+            height: 60px;
+            /* padding-left: 100px; */
+            font-size: 16px;
+            line-height: 50px;
+        }
+        .goodlist{
+            width: 1200px;
+            margin: 0 auto;
+            height: 120px;
+            /* padding-left: 100px; */
+            border: 1px solid gray;
+        }
+        .goodinfor{
+            width: 450px;
+            float: left;
+            font-size: 16px;
+            color: grey;
+            line-height: 50px;
+            padding: 5px;
+        }
+        .price{
+            width: 150px;
+            float: left;
+            color: grey;
+            padding: 5px;
+        }
+        .num{
+            width: 140px;
+            float: left;
+            font-size: 16px;
+            color: grey;
+            line-height: 50px;
+            padding: 5px;
+        }
+        .sumprice{
+            width: 110px;
+            float: left;
+            font-size: 16px;
+            color: grey;
+            line-height: 50px;
+            padding: 5px;
+        }
+        .del{
+            width: 160px;
+            float: left;    
+            font-size: 16px;
+            color: grey;
+            line-height: 50px;
+            padding: 5px;
+            
+        }
+        .price img{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .del a:hover{
+            color: orange
+        }
+        input{
+            text-align: center;
+        }
+        .single{
+            margin-top:55px
+        }
+        /* 弹窗 */
+       .alertbox{
+    width: 300px;
+    height: 180px;
+    border: 1px solid orange;
+    position: absolute;
+    left: 40%;
+    top:30%;
+    background: gray;
+    opacity: 0.8;
+    display: none;
+}
+.alertbox h3{
+    font-size: 22px;
+    margin-top:10px;
+    margin-left: 70px
+}
+.alertbox span{
+    position: absolute;
+    top:5px;
+    right: 8px;
+    cursor: pointer;
+    color: red;
+}
+.alertbox .btn1{
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    position: absolute;
+    color: #fff;
+    top:130px;
+    left: 50px;
+    background:  #ff4400;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+.alertbox .btn1 a{
+    color: #fff;    
+}
+.alertbox .btn2 a{
+    color: #fff;    
+}
+.alertbox .btn2{
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    top:130px;
+    right: 50px;
+    background:  #ff4400;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
     </style>
+
 </head>
 
 <body>
-    <div class="listitem">
-         <!-- <table>
-            <tr>
-                <td>商品图</td>
-                <td>标题</td>
-                <td>数量</td>
-                <td>价格</td>
-                <td>总价</td>
-                <td>操作</td>
-            </tr>
-            <tr>
-                <td><img src="http://attachments.snail.com/snail-app/goods/20181113160253693.jpg"
-                        alt=""></td>
-                <td>
-                    <p>《黑暗与光明》2018纪念款T恤蜗牛T恤/丝光棉/2018纪念款T恤蜗牛T恤/丝光棉/黑暗与光明
-                    </p>
-                </td>
-                <td><input type="text"></td>
-                <td>￥50</td>
-                <td>￥500</td>
-                <td><a>删除</a></td>
-            </tr>
-        </table>  -->
+    <div class="header">
+        <div class="topbar">
+            <div class="site-ct clearfix">
+                <div class="topbar-nav">
+                    <a href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">蜗牛移动</a> <a
+                        href="#" target="_blank" class="topbar-nav-link1 app" style="border-left:none;">免商店·免卡掌厅</a>
+                    <a href="" target="_blank" class="topbar-nav-link1 eng">English</a>
+                    <a href="#" target="_blank" class="topbar-nav-link1 topbar-nav-gif"><img
+                            src="../src/img/mianshangdian.gif">
+                    </a>
+                </div>
+                <div class="topvar-cart">
+                    <div id="commMeu" showcart="1">
+
+                        <div href="javascript:;" class="nav_a_c"><i></i><a href="cart.html">购物车</a>&nbsp;</div>
+
+                        <div class="community none" id="community">
+                            <div class="line"></div>
+                            <div id="cartLogin" class="none" style="display: none;">
+                            </div>
+                            <div id="cartUnlogin">请您先 <a href="" class="clr-red"></a> 再查看我的购物车！</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-info">
+                    <div class="fl">
+                        <a href="#" class="topbar-info-link topbar-info-link-b">免登录订单查询</a>
+                    </div>
+                    <div class="login notlogin fl">
+                        <a href="woniu.html" class="topbar-info-link topbar-info-link-b userlogin">退出</a>
+                        <a href="#" class="topbar-info-link userreg"></a>
+                    </div>
+                    <div class="login_ed haslogin fl none" style="display: none;">
+                        <a id="username" href="#" target="_blank"
+                            class="lg_edw username topbar-info-link topbar-info-link-b"></a>
+                        <a href="#" class="topbar-info-link userlogout">注销</a>
+                    </div>
+                    <div class="fl">
+                        <a href="cart.html" class="topbar-info-link topbar-info-link-b" id="topbarOrder">我的订单</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <div class="cart-top">
+        <div class="top clearfix" id="top">
+            <a href="" class="logo">
+                <img src="http://static.snail.com/images/cart/snail.png" alt="">
+            </a>
+            <p class="myclass">我的购物车</p>
+        </div>
+    </div>
+<!-- 商品列表 -->
+<div class="goodslist">
+        全选<input type="checkbox" name="" id="" class="all">
+    <div class="price">商品图</div>
+    <div class="goodinfor">商品信息</div>
+    <div class="num">数量</div>
+    <div class="sumprice">金额(元)</div>
+    <div class="del">操作</div>
+</div>
+
+<div class="good">
+
+</div>
+<!-- <div class="goodlist">
+     <div class="price"><img src="http://attachments.snail.com/snail-app/goods/20181113160253693.jpg"
+        alt=""></div>
+    <div class="goodinfor">《黑暗与光明》2018纪念款T恤蜗牛T恤/丝光棉/</div>
    
-    
+    <div class="num"><input type="text" size="10"></div>
+    <div class="sumprice">￥50</div>
+    <div class="del"><a class="dele">删除</a></div>
+</div> -->
+<div class="alertbox">
+        <h3>商品添加成功!</h3>
+            <span>X</span>
+            <div class="btn1"><a>确认删除</a></div>
+            <div class="btn2"><a>取消删除</a></div>
+    </div>
+    <script src="../src/script/thirdplugins/jquery-1.8.3.js"></script>
     <script src="../src/script/ajax1.js"></script>
     <script src="../src/script/cookie.js"></script>
     <script src="../src/script/cart.js"></script>

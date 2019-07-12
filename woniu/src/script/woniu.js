@@ -1,7 +1,7 @@
 // //商品数据渲染
 // const container=document.querySelector('.prop-rqdp-container');
 // let ajax=new XMLHttpRequest();
-// ajax.open('get','http://localhost/1905-js/project/woniu/php/woniu.php',true);
+// ajax.open('get','http://10.31.158.24/1905-js/project/woniu/php/woniu.php',true);
 // ajax.send();
 // ajax.onreadystatechange=function () {
 //     if (ajax.readyState === 4) {
@@ -11,7 +11,7 @@
 //             let strhtml='';
 //             for(let i=0;i<dataarr.length;i++){
 //                 strhtml+=`
-//                     <a class="prop-rqdp-product" href="http://localhost/1905-js/project/woniu/src/details.html?sid=${dataarr[i].picid}">
+//                     <a class="prop-rqdp-product" href="http://10.31.158.24/1905-js/project/woniu/src/details.html?sid=${dataarr[i].picid}">
 //                         <img src="${dataarr[i].url}">
 //                         <div class="prop-rqdp-product-name">${dataarr[i].title}</div>
 //                         <div class="prop-rqdp-product-price">￥${dataarr[i].price}</div>
@@ -36,13 +36,13 @@
     $.ajax({
         type: 'get',
         dataType: 'json',
-        url: 'http://localhost/1905-js/project/woniu/php/woniu.php',
+        url: 'http://10.31.158.24/1905-js/project/woniu/php/woniu.php',
         success: function (dataarr) {
             console.log(dataarr);
             let strhtml = '';
             $(dataarr).each(function (index) {
                 strhtml += `
-                <a class="prop-rqdp-product" href="http://localhost/1905-js/project/woniu/src/details.html?sid=${dataarr[index].picid}">
+                <a class="prop-rqdp-product" href="http://10.31.158.24/1905-js/project/woniu/src/details.html?sid=${dataarr[index].picid}">
                     <img src="${dataarr[index].url}">
                     <div class="prop-rqdp-product-name">${dataarr[index].title}</div>
                     <div class="prop-rqdp-product-price">￥${dataarr[index].price}</div>
